@@ -20,4 +20,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^', include('neverapp.urls')),
     url(r'^api/', include('neverapp.urls', namespace='neverapp')),
+
+    url(r'^o/', include('oauth2_provider.urls', namespace='oauth2_provider')),
+
 ]
